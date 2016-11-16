@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+        <title>Findome - поиск и бронирования квартир в новостройках</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="960px">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fotorama.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/multiple-select.css" />
+        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+        <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css" />
+		<!-- <link href="css/style_old.css" rel="stylesheet"> -->
+        <link rel="stylesheet/less" type="text/css" href="css/style.less">
+        <link href="css/style.css" rel="stylesheet">
+        
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/fotorama.js"></script>
+		<script src="js/jquery.multiple.select.js"></script>
+		<script src="js/ion.rangeSlider.js"></script>
+		<script src="js/findom.js"></script>
+        <script src="js/less.min.js" type="text/javascript"></script>
+        
+    </head>
+    
+    
+    
+    <body>  
+       <div class="menu-parent zero-padding">
+           
+            <div id="menu" class="container fin">
+				<div class="big-head-line l50 idi">
+				</div>
+                <ul class="col-xs-12 zero-padding">
+                    <li class="main-logo">
+                       <a href="index.html">
+                            <img src="images/findome.svg">
+                        </a>
+                    </li>
+                    <li class="hidden-index">
+                        <a href="#">
+                            Подбор квартир
+                        </a>
+                    </li>
+					<li class="hidden-index">
+						 <a href="gid.html">
+							Жилые комплексы
+						</a>
+					</li>                                       
+					<li class="hidden-index">
+						<a href="gid.html">
+							Застройщики
+						</a>
+					</li>
+					<li class="hidden-index hidden-mort">
+						<a href="gid.html">
+							Ипотека
+						</a>
+					</li>
+                   
+					<ul class="header-icons">
+
+						<li>
+							<a href="#"  rel="tooltip" data-placement="bottom" title="Выбор города">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+								<path class="hi" fill="#939393" d="M17.5,0C10.964,0,5.666,5.298,5.666,11.834c0,3.902,2.013,7.268,4.809,9.619
+								C16.954,26.899,17.469,33.385,17.5,35c0.031-1.615,0.546-8.101,7.025-13.548c2.796-2.351,4.809-5.717,4.809-9.619
+								C29.334,5.298,24.036,0,17.5,0z M17.5,17.82c-3.306,0-5.986-2.68-5.986-5.986s2.68-5.986,5.986-5.986
+								c3.306,0,5.986,2.68,5.986,5.986S20.806,17.82,17.5,17.82z"/>
+								</svg>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" rel="tooltip" data-placement="bottom" title="О проекте">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+								height="20px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+								<path class="hi" fill="#939393" d="M27.225,6.419h-11.67v8.591h9.725v6.395h-9.725V35h-7.78V0h19.45V6.419z"/>
+								</svg>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#" rel="tooltip" data-placement="bottom" title="Путеводитель">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+								<path class="hi" fill="#939393" d="M20.337,10.538c0-2.374-1.562-3.647-3.879-3.647c-2.144,0-3.706,1.1-5.27,2.663L6.5,5.269
+								C9.105,2.142,12.753,0,17.038,0C23.58,0,28.5,3.069,28.5,9.902c0,7.179-9.865,9.322-9.17,16.212h-5.272
+								C12.901,18.181,20.337,14.881,20.337,10.538z M16.763,29.709c1.458,0,2.545,1.144,2.545,2.66c0,1.487-1.088,2.631-2.545,2.631c-1.459,0-2.516-1.144-2.516-2.631C14.246,30.853,15.304,29.709,16.763,29.709z"/>
+								</svg>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" rel="tooltip" data-placement="bottom" title="Вход в кабинет">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+								<path class="hi" fill="#939393" d="M21.829,23.701c-0.864-0.137-0.883-2.512-0.883-2.512s2.538-2.512,3.091-5.891
+								c1.488,0,2.407-3.592,0.919-4.855C25.018,9.112,26.868,0,17.5,0c-9.368,0-7.518,9.112-7.456,10.442
+								c-1.488,1.264-0.569,4.855,0.919,4.855c0.553,3.378,3.091,5.891,3.091,5.891s-0.02,2.375-0.883,2.512
+								C10.389,24.143,0,29.936,0,34.96h17.5H35C35,29.936,24.611,24.143,21.829,23.701z"/>
+								</svg>
+							</a>
+						</li> 
+
+				<!--		<li>
+							<a href="#" rel="tooltip" data-placement="bottom" title="Вход/Регистрация">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+								<path class="hi" fill="#939393" d="M21.829,23.7c-0.864-0.137-0.884-2.512-0.884-2.512s1.514-1.505,2.458-3.747v-3.689h-3.856h-1v-1v-2.548v-1
+								h1h3.856V5.348v-1h1h0.241C23.861,2.051,21.943,0,17.5,0c-9.368,0-7.518,9.112-7.456,10.442c-1.488,1.263-0.569,4.855,0.919,4.855
+								c0.553,3.378,3.09,5.891,3.09,5.891s-0.02,2.375-0.883,2.512C10.389,24.143,0,29.936,0,34.96h17.5H35
+								C35,29.936,24.611,24.143,21.829,23.7z"/>
+								<polygon class="hi" fill="#939393" points="26.938,17.583 26.938,12.752 31.77,12.752 31.77,10.204 26.938,10.204 26.938,5.348 24.403,5.348 
+								24.403,10.204 19.547,10.204 19.547,12.752 24.403,12.752 24.403,17.583 	"/>
+								</svg>
+							</a>
+						</li>  -->
+
+				<li>
+							<a href="#" rel="tooltip" data-placement="bottom" title="Выйти из кабинета">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+								<polygon class="hi" fill="#D2D2D2" points="17.138,32.299 0,32.299 0,2.701 17.138,2.701 17.138,5.014 2.313,5.014 2.313,29.986 
+								17.138,29.986 			"/>
+								<polygon class="hi" fill="#D2D2D2" points="16.719,10.806 15.084,12.441 18.985,16.343 8.569,16.343 8.569,18.657 18.985,18.657 
+								15.084,22.559 16.719,24.194 23.412,17.5 		"/>
+								</svg>
+							</a>
+						</li> 
+						<li></li>
+					</ul>
+               
+                </ul>    
+           </div>
+           
+        </div>
+        
+	<div id="wrapper">        
+               
+	              
+		<div class="container-fluid container-fix">
+			<div class="zero-padding fotorama" data-width="100%"  data-loop="true" data-clicktransition="dissolve" data-arrows="true" data-click="false" data-swipe="false" data-nav="false" data-autoplay="5000">
+
+			  <div data-img="images/a4.jpg">
+					<div class="header_m-lay">
+					</div>
+					<div class="col-xs-9 col-xs-offset-3 anthem_nothing" style="top:30%;">
+						<h1>404<br> <span>страница не найдена</span></h1>
+						<a href="index.html">Вернуться на главную</a>
+					</div>
+			  </div>
+
+			</div>
+		</div>
+	    
+
+                                                                                                                                                                                   
+	<div class="container-fluid container-fix" id="footer">      
+		<div class="container fin">
+			<div class="col-xs-3 footer-topline">
+				<a href="#">
+					<img src="images/minilogo.svg">
+				</a>
+			</div>
+			<div class="col-xs-9 footer-topline">
+					<p>
+						<span>Findome не продает квартиры.</span> Материалы предоставлены исключительно в информационных целях. В базе новостроек findome.ru публикуются материалы, полученные из открытых источников. Все права на изображения и тексты принадлежат их правообладателям. 
+					</p>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-4 footer-item-list">
+					<h2>Findome</h2>
+					<ul>
+						<li>
+							<a href="">О проекте</a>
+						</li>
+						<li>
+							<a href="">Путеводитель</a>
+						</li>
+						<li>
+							<a href="">FAQ</a>
+						</li>
+						<li>
+							<a href="">Контакты</a>
+						</li>
+						<li>
+							<a href="">Контакты</a>
+						</li>
+						<li>
+							<a href="">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 footer-item-list">
+					<h2>Важно</h2>
+						<ul>
+							<li>
+								<a href="">Политика использования файлов cookie</a>
+							</li>
+							<li>
+								<a href="">Пользовательское соглашение</a>
+							</li>
+							<li>
+								<a href="">Политика конфиденциальности
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-xs-2 footer-item-list">
+					<h2>Полезно</h2>
+						<ul>
+							<li>
+								<a href="">Застройщикам</a>
+							</li>
+							<li>
+								<a href="">Партнерам</a>
+							</li>
+							<li>
+								<a href="">Банкам
+								</a>
+							</li>
+							<li>
+								<a href="">Агентам
+								</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<div class="row" style="margin-top:35px; margin-bottom:35px;">
+				<div class="col-xs-4  footer-list-social">
+					<h2>Мы в сети</h2>
+						<ul>
+							<li>
+								<a href="">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="31.646px" height="31.646px" viewBox="0 0 31.646 31.646" enable-background="new 0 0 31.646 31.646" xml:space="preserve">
+	<path class="social-hover" fill="#FFFFFF" d="M29.898,0H1.747C0.783,0,0,0.781,0,1.747v28.151c0,0.966,0.783,1.748,1.747,1.748h15.156V19.391h-4.124
+	v-4.777h4.124v-3.522c0-4.087,2.495-6.313,6.142-6.313c1.748,0,3.247,0.131,3.684,0.188v4.272l-2.529,0.001
+	c-1.983,0-2.365,0.943-2.365,2.325v3.049h4.73l-0.619,4.776h-4.112v12.256h8.064c0.965,0,1.748-0.783,1.748-1.746V1.746
+	C31.645,0.781,30.863,0,29.898,0z"/>
+	</svg>
+
+								</a>
+							</li>
+							<li>
+								<a href="">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="31.641px" height="31.641px" viewBox="0 0 31.641 31.641" enable-background="new 0 0 31.641 31.641" xml:space="preserve">
+		<path class="social-hover" fill="#FFFFFF" d="M4.061,0H27.58c2.234,0,4.061,1.654,4.061,4.061V27.58c0,2.407-1.827,4.061-4.061,4.061H4.061
+		C1.827,31.641,0,29.988,0,27.58V4.061C0,1.654,1.827,0,4.061,0L4.061,0z M23.049,3.515c-0.784,0-1.424,0.641-1.424,1.425v3.41
+		c0,0.784,0.64,1.425,1.424,1.425h3.576c0.784,0,1.425-0.641,1.425-1.425V4.94c0-0.784-0.641-1.425-1.425-1.425H23.049
+		L23.049,3.515z M28.065,13.381H25.28c0.263,0.86,0.406,1.772,0.406,2.714c0,5.263-4.404,9.529-9.836,9.529
+		c-5.431,0-9.835-4.266-9.835-9.529c0-0.943,0.142-1.854,0.406-2.714H3.516v13.366c0,0.692,0.566,1.258,1.258,1.258h22.034
+		c0.692,0,1.258-0.566,1.258-1.258L28.065,13.381L28.065,13.381z M15.85,9.595c-3.509,0-6.355,2.757-6.355,6.157
+		s2.845,6.157,6.355,6.157c3.51,0,6.355-2.757,6.355-6.157S19.36,9.595,15.85,9.595z"/>
+	</svg>
+
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="32.781px" height="31.641px" viewBox="0 0 32.781 31.641" enable-background="new 0 0 32.781 31.641" xml:space="preserve">
+									<path class="social-hover" fill="#FFFFFF" d="M28.894,13.587c0.451-0.583,0.81-1.051,1.074-1.405c1.906-2.533,2.731-4.152,2.478-4.857L32.347,7.16
+									c-0.066-0.099-0.237-0.19-0.512-0.273c-0.275-0.082-0.628-0.096-1.057-0.041L26.019,6.88c-0.11-0.011-0.22-0.008-0.331,0.008
+									c-0.11,0.017-0.182,0.034-0.215,0.05c-0.033,0.017-0.061,0.03-0.082,0.041l-0.066,0.05c-0.055,0.033-0.116,0.091-0.182,0.174
+									c-0.066,0.083-0.122,0.179-0.165,0.289c-0.518,1.333-1.107,2.572-1.768,3.718c-0.408,0.683-0.782,1.275-1.123,1.776
+									c-0.342,0.502-0.628,0.871-0.859,1.107c-0.231,0.237-0.441,0.427-0.628,0.57c-0.188,0.144-0.331,0.204-0.429,0.182
+									c-0.099-0.022-0.193-0.044-0.281-0.066c-0.154-0.099-0.278-0.234-0.372-0.405c-0.094-0.17-0.157-0.385-0.19-0.644
+									c-0.033-0.259-0.053-0.482-0.058-0.669c-0.006-0.187-0.003-0.451,0.008-0.793c0.011-0.342,0.016-0.572,0.016-0.694
+									c0-0.418,0.008-0.873,0.025-1.363c0.016-0.49,0.03-0.879,0.041-1.165c0.011-0.286,0.016-0.589,0.016-0.909
+									c0-0.319-0.019-0.57-0.058-0.752c-0.039-0.181-0.097-0.358-0.173-0.529c-0.077-0.17-0.19-0.303-0.339-0.396
+									c-0.149-0.094-0.333-0.168-0.553-0.223c-0.584-0.132-1.328-0.203-2.231-0.215c-2.049-0.021-3.365,0.111-3.949,0.397
+									c-0.231,0.121-0.441,0.286-0.628,0.496c-0.198,0.243-0.226,0.375-0.082,0.396c0.661,0.099,1.129,0.336,1.404,0.711l0.099,0.198
+									c0.077,0.144,0.154,0.397,0.231,0.76c0.077,0.363,0.127,0.765,0.149,1.206c0.055,0.804,0.055,1.492,0,2.065
+									c-0.055,0.573-0.107,1.019-0.157,1.338c-0.05,0.32-0.124,0.578-0.223,0.776c-0.099,0.199-0.165,0.32-0.198,0.364
+									c-0.033,0.044-0.061,0.071-0.082,0.083c-0.143,0.055-0.292,0.082-0.446,0.082c-0.154,0-0.342-0.077-0.562-0.232
+									c-0.22-0.154-0.449-0.366-0.686-0.636c-0.237-0.27-0.504-0.647-0.802-1.132c-0.297-0.484-0.606-1.057-0.925-1.718l-0.264-0.479
+									c-0.165-0.308-0.391-0.757-0.678-1.346c-0.286-0.589-0.54-1.159-0.76-1.71C7.376,7.408,7.244,7.232,7.068,7.11l-0.082-0.05
+									C6.931,7.017,6.842,6.97,6.721,6.92C6.6,6.871,6.473,6.835,6.341,6.813L1.814,6.846c-0.463,0-0.776,0.105-0.942,0.314
+									L0.806,7.259c-0.033,0.055-0.05,0.144-0.05,0.265c0,0.121,0.033,0.27,0.099,0.446c0.661,1.553,1.38,3.051,2.156,4.494
+									c0.777,1.443,1.451,2.606,2.024,3.487c0.573,0.882,1.156,1.713,1.752,2.495s0.989,1.283,1.181,1.503
+									c0.193,0.221,0.344,0.386,0.454,0.496l0.413,0.397c0.264,0.264,0.653,0.581,1.165,0.95c0.512,0.369,1.079,0.733,1.702,1.09
+									c0.622,0.358,1.347,0.65,2.173,0.876c0.826,0.226,1.63,0.317,2.412,0.272h1.9c0.386-0.033,0.677-0.154,0.876-0.363l0.066-0.082
+									c0.044-0.066,0.085-0.168,0.124-0.305c0.038-0.138,0.058-0.289,0.058-0.454c-0.011-0.474,0.025-0.901,0.107-1.281
+									c0.082-0.38,0.176-0.666,0.281-0.86c0.105-0.192,0.223-0.355,0.355-0.487c0.132-0.132,0.226-0.212,0.281-0.239
+									c0.055-0.027,0.099-0.046,0.132-0.058c0.264-0.088,0.575-0.003,0.934,0.256c0.358,0.259,0.694,0.578,1.008,0.958
+									c0.314,0.38,0.691,0.807,1.132,1.281c0.44,0.474,0.826,0.826,1.156,1.057l0.331,0.199c0.22,0.132,0.506,0.253,0.859,0.363
+									c0.352,0.11,0.661,0.138,0.925,0.082l4.23-0.066c0.418,0,0.744-0.069,0.975-0.206c0.231-0.137,0.369-0.289,0.413-0.454
+									c0.044-0.165,0.047-0.352,0.008-0.561c-0.039-0.209-0.077-0.355-0.116-0.437c-0.039-0.082-0.075-0.152-0.108-0.206
+									c-0.551-0.991-1.603-2.209-3.156-3.652l-0.033-0.033l-0.016-0.017l-0.016-0.016h-0.017c-0.705-0.672-1.151-1.124-1.338-1.355
+									c-0.341-0.44-0.419-0.886-0.231-1.338C27.539,15.411,28.034,14.689,28.894,13.587z"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="31.641px" height="31.641px" viewBox="0 0 31.641 31.641" enable-background="new 0 0 31.641 31.641" xml:space="preserve">
+									<path class="social-hover" fill="#FFFFFF" d="M26.757,10.213c0.013,0.242,0.018,0.485,0.018,0.73c0,7.457-5.676,16.055-16.055,16.055
+									c-3.186,0-6.152-0.934-8.651-2.535c0.439,0.049,0.891,0.08,1.346,0.08c2.644,0,5.077-0.903,7.009-2.418
+									c-2.472-0.044-4.554-1.677-5.273-3.918c0.345,0.066,0.699,0.102,1.059,0.102c0.516,0,1.015-0.07,1.487-0.199
+									c-2.582-0.521-4.528-2.799-4.528-5.535c0-0.024,0-0.047,0-0.07c0.761,0.421,1.632,0.675,2.557,0.704
+									c-1.514-1.012-2.509-2.741-2.509-4.697c0-1.034,0.278-2.002,0.764-2.835c2.781,3.414,6.94,5.659,11.63,5.894
+									c-0.097-0.411-0.145-0.844-0.145-1.287c0-3.113,2.526-5.64,5.641-5.64c1.624,0,3.091,0.685,4.12,1.78
+									c1.284-0.252,2.493-0.721,3.583-1.368c-0.422,1.317-1.317,2.423-2.481,3.121c1.14-0.135,2.226-0.438,3.24-0.889
+									C28.816,8.424,27.861,9.418,26.757,10.213z"/>
+									</svg>
+
+								</a>
+							</li>	
+							<li>
+								<a href="#">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="31.641px" height="31.641px" viewBox="0 0 31.641 31.641" enable-background="new 0 0 31.641 31.641" xml:space="preserve">
+									<path class="social-hover" fill="#FFFFFF" d="M19.825,3.93h-5.672c-2.527,0-4.277,0.554-5.852,1.855C7.063,6.853,6.324,8.406,6.324,9.938
+									c0,2.361,1.8,4.871,5.137,4.871c0.321,0,0.676-0.033,0.989-0.062l-0.046,0.112c-0.134,0.321-0.261,0.624-0.261,1.097
+									c0,0.921,0.444,1.489,0.874,2.038l0.054,0.07l-0.096,0.007c-1.378,0.094-3.942,0.27-5.815,1.421
+									c-2.212,1.315-2.384,3.229-2.384,3.783c0,2.208,2.057,4.436,6.654,4.436c5.345,0,8.141-2.949,8.141-5.861
+									c0-2.154-1.263-3.218-2.604-4.347l-1.131-0.88c-0.35-0.29-0.785-0.65-0.785-1.317c0-0.656,0.435-1.09,0.819-1.472l0.04-0.041
+									c1.221-0.962,2.606-2.053,2.606-4.412c0-2.372-1.482-3.598-2.195-4.187h1.882c0.023,0,0.046-0.006,0.065-0.019l1.621-1.019
+									c0.046-0.029,0.068-0.085,0.053-0.138C19.928,3.966,19.879,3.93,19.825,3.93z M12.947,26.412c-3.258,0-5.447-1.522-5.447-3.786
+									c0-1.479,0.895-2.553,2.659-3.192c1.412-0.475,3.235-0.499,3.253-0.499c0.309,0,0.464,0,0.711,0.031
+									c2.28,1.622,3.376,2.474,3.376,4.096C17.497,25.129,15.753,26.412,12.947,26.412z M12.916,13.94
+									c-2.734,0-3.869-3.594-3.869-5.519c0-0.979,0.223-1.73,0.68-2.297c0.497-0.622,1.348-1.023,2.168-1.023
+									c2.51,0,3.899,3.374,3.899,5.706c0,0.368,0,1.487-0.773,2.265C14.5,13.591,13.655,13.94,12.916,13.94z"/>
+									<path class="social-hover" fill="#FFFFFF" d="M27.774,15.037h-2.989v-2.978c0-0.068-0.055-0.123-0.123-0.123h-1.286c-0.068,0-0.123,0.055-0.123,0.123
+									v2.978H20.28c-0.068,0-0.123,0.055-0.123,0.123v1.303c0,0.068,0.055,0.123,0.123,0.123h2.974v2.997
+									c0,0.068,0.055,0.123,0.123,0.123h1.286c0.068,0,0.123-0.055,0.123-0.123v-2.998h2.989c0.068,0,0.123-0.055,0.123-0.123V15.16
+									C27.897,15.092,27.842,15.037,27.774,15.037z"/>
+									</svg>
+
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-xs-6 footer-contact-list">
+					<h2>Контакты</h2>
+					<p>
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.89px"
+						height="22.625px" viewBox="0 0 24.89 22.625" enable-background="new 0 0 24.89 22.625" xml:space="preserve">
+						<path fill="#FFFFFF" d="M21.416,3.336c0,0-2.408-3.867-5.909-1.682C12.006,3.84,9.312,6.437,8.276,8.653
+						C7.239,10.869,4.49,16.61,7.001,19.724c0,0,1.369,1.454,2.953,2.224l0.745-6.05c0,0-1.502-0.751-0.938-2.129
+						c0.564-1.378,3.886-6.635,3.886-6.635s1.138-1.587,2.691-0.52L21.416,3.336z"/>
+						<path fill="#FFFFFF" d="M21.691,3.792c0,0,0.286,0.242,0.315,0.984c0.03,0.743-0.226,0.897-0.226,0.897l-3.501,2.186
+						c0,0-0.297-0.028-0.623-0.107c-0.327-0.079-1.032-0.551-0.889-0.776C16.911,6.751,21.691,3.792,21.691,3.792z"/>
+						<path fill="#FFFFFF" d="M11.283,16.011l1.277,0.768c0,0,0.204,0.222,0.193,0.782c-0.012,0.56-0.415,3.708-0.415,3.708
+						s-0.093,0.54-0.512,0.655c-0.419,0.116-1.34,0.326-1.34,0.326L11.283,16.011z"/>
+						</svg>
+
+					+7 (383) 354 14 33</p>
+					<p>
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.89px"
+						height="22.625px" viewBox="0 0 24.89 22.625" enable-background="new 0 0 24.89 22.625" xml:space="preserve">
+						<polygon fill="#FFFFFF" points="24.12,3.742 0.77,3.742 12.445,11.575 		"/>
+						<polygon fill="#FFFFFF" points="12.445,13.867 0.662,5.963 0.662,19.551 24.228,19.551 24.228,5.963 		"/>
+						</svg>
+					info@findome.ru</p>
+				</div>
+				<div class="col-xs-12 footer-topline">
+					<p style="margin-bottom:0px;">© 2015 findome.ru При использовании материалов гиперссылка на <a href="/">findome.ru</a> обязательна.</p>
+				</div>	
+			</div>	
+		</div>
+	</div>
+   
+             <!--    Modal_z   -->
+    <div class="modal fade modal-z" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="container container-modal-city zero-padding">
+                <div class="col-xs-12 header-container-modal header-block">
+                    <div class="modal-text">
+                        <p>Выберите застройщика</p>
+                    </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-hidden="true">
+                        <img src="images/close.png" class="">
+                    </button>
+                </div>
+                <div class="col-xs-12 list-modal-city">
+                    <div class="col-xs-4">
+                        <ul>
+                            <li>
+                                <label class="checkbox-inline check-style">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1">ЗАО «Строитель»
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4">
+                        <ul>
+                            <li>
+                                <label class="checkbox-inline check-style">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1">«Первый строительный фонд» 
+                                </label>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="col-xs-4">
+                        <ul>
+                            <li>
+                                <label class="checkbox-inline check-style">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1">Группа компаний ЗАО «СД Альфа Капитал»
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>     
+                <div class="col-xs-12 modal-button">
+                    <a href="#" class="search-button modal-but">Выбрать</a> 
+                </div>
+        </div>
+    </div>
+
+    <!--    End Modal_z   -->
+
+   
+    </body>
+</html>

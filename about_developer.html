@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+        <title>Findome - поиск и бронирования квартир в новостройках</title>
+        <meta name="viewport" content="960px">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fotorama.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/multiple-select.css" />
+        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+        <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css" />
+		<!-- <link href="css/style_old.css" rel="stylesheet"> -->
+        <link rel="stylesheet/less" type="text/css" href="css/style.less">
+        <link href="css/style.css" rel="stylesheet">
+        
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/fotorama.js"></script>
+		<script src="js/jquery.multiple.select.js"></script>
+		<script src="js/ion.rangeSlider.js"></script>
+		<script src="js/jquery.stickytableheaders.js"></script>
+		<script src="js/enquire.min.js"></script>
+		<script src="js/findom.js"></script>
+        <script src="js/less.min.js" type="text/javascript"></script>
+    </head>
+    
+    
+    <body>
+        
+       <div class="col-xs-12 menu-parent zero-padding">
+            <div id="menu">
+                <ul>
+                    <li class="main-logo">
+                       <a href="index.html">
+                            <img src="images/findome.svg">
+                        </a>
+                    </li>
+                   <li class="page-scroll">
+                        <a data-toggle="modal" data-target=".bs-example-modal-md">
+                            Выберите город
+                        </a>
+                    </li>
+			<li>
+				 <a href="gid.html">
+					Путиводитель по сайту
+				</a>
+			</li>                                       
+			<li>
+				<a href="gid.html">
+					О проекте
+				</a>
+			</li>
+			<li>                                    
+				<a class="head-reg" data-toggle="modal" data-target=".registration">
+					Войти / зарегистрироваться
+				</a>
+			</li>
+                </ul>    
+           </div>
+        </div>
+        
+        <div id="wrapper">        
+            
+		<div class="container fin ">
+		   <div class="col-xs-12 breadcrumb-block margin-top-70">
+				<ol class="breadcrumb zero-padding breadcrumbfix">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="alldevelopers.html">Все застройщики</a></li>
+					<li class="active"><a href="about_developer.html">Застройщик</a></li>
+				</ol>
+			</div>
+		</div>
+       
+		<div class="container fin">
+			<div class="col-xs-12 complex-menu zero-padding">
+				<a href="about_developer.html" class="col-xs-3 complex-logo">
+					<img src="images/dev2.png">
+				</a>
+				<div class="col-xs-9 zero-padding">
+				<ul>
+				   <li class="active">
+						<a href="about_developer.html">О застройщике
+						</a>
+					</li>
+					<li>
+						<a href="obj_developer.html" >Объекты
+						</a>
+					</li>
+					<li>
+						<a href="gallery.html" >Галерея
+						</a>
+					</li>
+					<li>
+						<a href="stock.html">Акции
+						</a>
+					</li>
+					<li>
+						<a href="stock.html">Отзывы
+						</a>
+					</li>
+				</ul>    
+				</div>
+			</div>
+		</div>      
+                  
+                  
+		<div class="container-fluid container-fix about-header about-header-bigger">   
+	   		<div class="about-header-layer-black">
+	   			<div class="col-xs-12 zero-padding dev-line">
+				</div>
+		   		<div class="container fin about-overflow">				 	
+					<div class="col-xs-10 col-xs-offset-1 dev-contacts">
+						<p>630040, Россия, г. Новосибирск, ул. Кубовая, 112</p>
+						<p>8 (383) 311-07-08</p>
+						<p>info@gk-strizhi.ru</p>
+						<a href="#">gk-strizhi.ru</a>
+					</div>
+					<div class="col-xs-12 column column-mid zero-padding">
+						<p>Строим не просто квадратные метры, строим новую жизнь!</p>
+						<p>
+Построить дом, продать квартиры и уйти – так делают большинство застройщиков, но группа компаний «Стрижи» пришла в район улицы Кубовой надолго, - по крайней мере, до тех пор, пока будет что менять, доводить до совершенства и дополнять.</p>
+						<p>Все идеи и проекты, реализуемые нами, основаны на желании каждого человека иметь дом, в котором будет уютно, комфортно и безопасно.</p>
+						<p>«Качественно изменить взгляд на доступное жилье – такую задачу мы ставим перед собой. При проектировании микрорайона мы обратили самое пристальное внимание на благополучие семьи, предложив покупателям практичные, продуманные решения по благоустройству и инфраструктуре». Игорь Белокобыльский, генеральный директор ГК «Стрижи»</p>
+												<p>Строим не просто квадратные метры, строим новую жизнь!</p>
+						<p>
+Построить дом, продать квартиры и уйти – так делают большинство застройщиков, но группа компаний «Стрижи» пришла в район улицы Кубовой надолго, - по крайней мере, до тех пор, пока будет что менять, доводить до совершенства и дополнять.</p>
+						<p>Все идеи и проекты, реализуемые нами, основаны на желании каждого человека иметь дом, в котором будет уютно, комфортно и безопасно.</p>
+						<p>«Качественно изменить взгляд на доступное жилье – такую задачу мы ставим перед собой. При проектировании микрорайона мы обратили самое пристальное внимание на благополучие семьи, предложив покупателям практичные, продуманные решения по благоустройству и инфраструктуре». Игорь Белокобыльский, генеральный директор ГК «Стрижи»</p>
+												<p>Строим не просто квадратные метры, строим новую жизнь!</p>
+						<p>
+Построить дом, продать квартиры и уйти – так делают большинство застройщиков, но группа компаний «Стрижи» пришла в район улицы Кубовой надолго, - по крайней мере, до тех пор, пока будет что менять, доводить до совершенства и дополнять.</p>
+						<p>Все идеи и проекты, реализуемые нами, основаны на желании каждого человека иметь дом, в котором будет уютно, комфортно и безопасно.</p>
+						<p>«Качественно изменить взгляд на доступное жилье – такую задачу мы ставим перед собой. При проектировании микрорайона мы обратили самое пристальное внимание на благополучие семьи, предложив покупателям практичные, продуманные решения по благоустройству и инфраструктуре». Игорь Белокобыльский, генеральный директор ГК «Стрижи»</p>
+						
+					</div>
+				</div>
+     
+				<div class="container-fluid filter-line" data-speed="2" data-type="background">
+					<div class="container fin">
+						<div class="col-xs-12 zero-padding filter-container">
+							<div class="col-xs-4 zero-padding">
+								<h3>Квартиры от застройщика</h3>
+							</div>
+							<div class="col-xs-6 zero-padding filter-body">
+								<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+									Адресс
+									<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+										<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+									10.842,4.447 10.842,6.2 6.314,6.2 "/>
+									</svg>
+								</a>
+								<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+									Комнаты
+									<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+										<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+									10.842,4.447 10.842,6.2 6.314,6.2 "/>
+									</svg>
+								</a>
+								<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+									Секция
+									<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+										<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+									10.842,4.447 10.842,6.2 6.314,6.2 "/>
+									</svg>
+								</a>
+								<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+									Этаж
+									<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+										<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+									10.842,4.447 10.842,6.2 6.314,6.2 "/>
+									</svg>
+								</a>
+								<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+									Площадь
+									<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+										<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+									10.842,4.447 10.842,6.2 6.314,6.2 "/>
+									</svg>
+								</a>
+								<button type="button" class="col-xs-2 zero-padding filter-item filter-button">
+									<p>Очистить</p>
+									<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+											<polygon class="fplus" fill="#4D4D4D" points="1.32,8.849 0.058,7.586 3.202,4.442 0,1.24 1.24,0 4.442,3.202 7.586,0.058 8.849,1.32 
+												5.705,4.465 8.907,7.667 7.667,8.907 4.465,5.705 		"/>
+									</svg>
+
+								</button>
+							</div>
+							<div class="col-xs-2 zero-padding check-book">
+								<span>
+									<input type="checkbox" />   
+									<label>Не отображать забронированные</label>  
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+		<div class="container fin">
+			<div class="col-xs-12">
+				<table class="table issue-table display">
+					<thead>
+						<tr>
+							<th id="bn">Квартира</th>
+							<th>Адресс</th>
+							<th>Секция</th>
+							<th>Комн.&nbsp&nbsp</th>
+							<th>Этаж&nbsp&nbsp</th>
+							<th >S м<sup>2</sup></th>
+							<th>Цена&nbsp&nbsp<br>т.р./м<sup>2</sup>&nbsp&nbsp</th>
+							<th>Стоимость</th>
+						</tr>
+					</thead>
+					<tbody class="text-center">
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										103
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Краузе 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								1
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 cт.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								17/20
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								30
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								53 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+									<img src="images/add.svg" class="add z-but">
+									<img src="images/addh.svg" class="add z-but-h">
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+		
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+			
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+
+
+						<tr>
+							<td scope="row" class="no-hover anchor" onClick="location.href='apartment-free.html' ">
+								<a href="#" title="Посмотреть квартиру">
+									<div class="flat-number">
+										98
+									</div>
+								</a>
+								<a href="#" title="добавить квартиру в сравнение" rel="tooltip" data-placement="right">
+				
+								</a>
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								Кропоткина 142
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								3
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								2 кмн.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								4/12
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								62
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								65 т.р.
+							</td>
+							<td class="anchor" onClick="location.href='apartment.html' ">
+								5 500 т.р.
+							</td>
+						</tr>
+
+
+				</tbody>
+				</table>
+			</div>
+		</div>
+           
+           <div class="modal fade modal_filters" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="container container-modal-city zero-padding">
+                <div class="col-xs-12 header-container-modal header-block">
+                    <div class="modal-text">
+                        <p>Город</p>
+                    </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-hidden="true">
+                        <img src="images/close.png">
+                    </button>
+                </div>
+                
+                <div class="col-xs-12 list-modal-city">
+                   
+                    <div class="col-xs-4 modal-list-item">
+                        <li>                 
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />   
+                                <label>Новосибирск</label>  
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />     
+									<label>Омск</label>
+								</span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" /> 
+                                <label>Томск</label>    
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+
+ 					<div class="col-xs-4 modal-list-item">
+                        <li>                 
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />   
+                                <label>Екатеринбург</label>  
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />     
+									<label>Уфа</label>
+								</span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" /> 
+                                <label>Иркутск</label>    
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+      
+                                                                                                               
+		 <div class="container-fluid container-fix" id="footer">      
+				<div class="row">
+					<div class="col-xs-4">
+							<img src="images/black-logo.svg" class="footer-logo">
+					</div>
+					<div class="col-xs-4 zero-padding">
+					</div>
+					<div class="col-xs-4 zero-padding">
+						<ul class="list-line list-inline">
+							<li>
+								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+							</li>
+							<li>
+								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-vk"></i></a>
+							</li>
+							<li>
+								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

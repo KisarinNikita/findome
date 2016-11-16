@@ -1,0 +1,9 @@
+# Ignore image cache files
+Thumbs.db
+.DS_Store
+
+# Ignore idea files
+.idea/*
+
+# Ignore OneNote files
+*.onetoc2

@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+        <title>Findome - поиск и бронирования квартир в новостройках</title>
+        <meta name="viewport" content="960px">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fotorama.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/multiple-select.css" />
+        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+        <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css" />
+		<!-- <link href="css/style_old.css" rel="stylesheet"> -->
+        <link rel="stylesheet/less" type="text/css" href="css/style.less">
+        <link href="css/style.css" rel="stylesheet">
+        
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/fotorama.js"></script>
+		<script src="js/jquery.multiple.select.js"></script>
+		<script src="js/ion.rangeSlider.js"></script>
+		<script src="js/jquery.stickytableheaders.js"></script>
+		<script src="js/findom.js"></script>
+        <script src="js/less.min.js" type="text/javascript"></script>
+    </head>
+    
+    
+    <body>
+        
+       <div class="col-xs-12 menu-parent zero-padding">
+            <div id="menu">
+                <ul>
+                    <li class="main-logo">
+                       <a href="index.html">
+                            <img src="images/findome.svg">
+                        </a>
+                    </li>
+                   <li class="page-scroll">
+                        <a data-toggle="modal" data-target=".bs-example-modal-md">
+                            Выберите город
+                        </a>
+                    </li>
+			<li>
+				 <a href="gid.html">
+					Путиводитель по сайту
+				</a>
+			</li>                                       
+			<li>
+				<a href="gid.html">
+					О проекте
+				</a>
+			</li>
+			<li>                                    
+				<a class="head-reg" data-toggle="modal" data-target=".registration">
+					Войти / зарегистрироваться
+				</a>
+			</li>
+                </ul>    
+           </div>
+        </div>
+        
+        <div id="wrapper">        
+            
+		<div class="container fin ">
+		   <div class="col-xs-12 breadcrumb-block margin-top-70">
+				<ol class="breadcrumb zero-padding breadcrumbfix">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="issue.html">Жилые комплексы</a></li>
+					<li><a href="about_complex.html">Северная Корона</a></li>
+					<li class="active"><a href="apartment.html">квартира №375</a></li>
+				</ol>
+			</div>
+		</div>
+       
+		<div class="container fin">
+			<div class="col-xs-12 ap-block zero-padding">
+			
+				<div href="apartment.html" class="col-xs-4 ap-name zero-padding">
+						<h2>Квартира<span>375</span></h2>
+				</div>
+			
+				<div class="col-xs-4 zero-padding text-right">
+					<div class="col-xs-4 ap-button">
+					
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="71.37px"
+							 height="71.37px" viewBox="0 0 71.37 71.37" enable-background="new 0 0 71.37 71.37" xml:space="preserve">
+							<polygon fill="#4D4D4D" points="35.298,47.006 23.806,34.759 25.994,32.707 34.833,42.127 45.028,26.003 47.564,27.606 		"/>
+						</svg>
+
+				<!--		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="71.37px"
+						 height="71.37px" viewBox="0 0 71.37 71.37" enable-background="new 0 0 71.37 71.37" xml:space="preserve">
+							<path class="circle-but" opacity="0" fill="#D3D3D3" d="M35.685,0.5C16.284,0.5,0.5,16.284,0.5,35.685S16.284,70.87,35.685,70.87
+							S70.87,55.086,70.87,35.685S55.086,0.5,35.685,0.5z"/>
+							<path class="circle-but" fill="#D3D3D3" d="M35.685,71.37C16.008,71.37,0,55.362,0,35.685S16.008,0,35.685,0S71.37,16.008,71.37,35.685
+							S55.362,71.37,35.685,71.37z M35.685,1C16.56,1,1,16.56,1,35.685S16.56,70.37,35.685,70.37S70.37,54.811,70.37,35.685
+							S54.811,1,35.685,1z"/>
+							<path class="inner-but" fill="#4D4D4D" d="M36.692,40.89l4.067,5.685h-8.135L36.692,40.89z M53.609,34.188l-33.972,8.32l0.231,0.924l33.972-8.32
+							L53.609,34.188z M29.343,38.301l-2.403-10.03l-10.076,2.403l2.403,10.03L29.343,38.301z"/>
+							<path  class="inner-but" fill="#4D4D4D" d="M50.42,26.007l1.34,5.593l-5.685,1.34l-1.34-5.593L50.42,26.007 M51.344,24.528l-8.089,1.895
+							l1.895,7.996l8.089-1.895L51.344,24.528z"/>
+						</svg> -->
+
+						<p class="s-label-small color-dark_gray">
+						Добавлена в сравнение
+						</p>
+					<!--	<p class="s-label-small color-dark_gray">
+						Добавлена в сравнение
+						</p>-->
+					</div>
+					<div class="col-xs-4 ap-button">
+					<!--	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="71.37px"
+							 height="71.37px" viewBox="0 0 71.37 71.37" enable-background="new 0 0 71.37 71.37" xml:space="preserve">
+							<path class="circle-but" opacity="0" fill="#D3D3D3" d="M35.685,0.5C16.284,0.5,0.5,16.284,0.5,35.685S16.284,70.87,35.685,70.87
+								S70.87,55.086,70.87,35.685S55.086,0.5,35.685,0.5z"/>
+								<path class="circle-but" fill="#D3D3D3" d="M35.685,71.37C16.008,71.37,0,55.362,0,35.685S16.008,0,35.685,0S71.37,16.008,71.37,35.685
+									S55.362,71.37,35.685,71.37z M35.685,1C16.56,1,1,16.56,1,35.685S16.56,70.37,35.685,70.37S70.37,54.811,70.37,35.685
+									S54.811,1,35.685,1z"/>
+							<path class="inner-but" fill="#4D4D4D" d="M44.187,32.703h-0.95v-2.089c0-4.147-3.374-7.521-7.521-7.521c-4.147,0-7.521,3.374-7.521,7.521v2.089
+								h-1.013c-0.671,0-1.216,0.544-1.216,1.216v12.143c0,0.671,0.544,1.216,1.216,1.216h17.004c0.671,0,1.216-0.544,1.216-1.216V33.919
+								C45.403,33.248,44.858,32.703,44.187,32.703z M30.627,30.614c0-2.807,2.283-5.09,5.09-5.09c2.807,0,5.09,2.283,5.09,5.09v2.089
+								h-10.18V30.614z M42.972,44.846H28.398v-9.712h1.013h12.611h0.95V44.846z"/>
+						</svg> -->
+
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="71.37px"
+							 height="71.37px" viewBox="0 0 71.37 71.37" enable-background="new 0 0 71.37 71.37" xml:space="preserve">
+								<path  class="circle-but" opacity="0" fill="#D3D3D3" d="M35.685,0.5C16.284,0.5,0.5,16.284,0.5,35.685S16.284,70.87,35.685,70.87
+								S70.87,55.086,70.87,35.685S55.086,0.5,35.685,0.5z"/>
+								<path  class="circle-but" fill="#D3D3D3" d="M35.685,71.37C16.008,71.37,0,55.362,0,35.685S16.008,0,35.685,0S71.37,16.008,71.37,35.685
+								S55.362,71.37,35.685,71.37z M35.685,1C16.56,1,1,16.56,1,35.685S16.56,70.37,35.685,70.37S70.37,54.811,70.37,35.685
+								S54.811,1,35.685,1z"/>
+								<path class="inner-but" fill="#4D4D4D" d="M47.13,22.347c-2.996,0-5.434,2.438-5.434,5.434H23.779l11.675,7.833l7.165-4.807
+								c0.363,0.54,0.823,1.007,1.351,1.386l-8.516,5.713l-11.783-7.905V43.59h23.567V33.209c2.946-0.058,5.325-2.468,5.325-5.428
+								C52.563,24.784,50.126,22.347,47.13,22.347z M47.238,32.203c-0.037,0.001-0.071,0.011-0.108,0.011
+								c-0.823,0-1.586-0.24-2.247-0.634c-0.569-0.337-1.064-0.784-1.433-1.332c-0.475-0.706-0.754-1.555-0.754-2.469
+								c0-2.445,1.989-4.434,4.434-4.434s4.434,1.989,4.434,4.434C51.563,30.188,49.631,32.145,47.238,32.203z"/>
+								<polygon class="inner-but" fill="#4D4D4D" points="47.607,28.832 47.689,24.507 46.685,24.507 46.795,28.832 		"/>
+								<path class="inner-but" fill="#4D4D4D" d="M47.215,29.572c-0.172,0-0.316,0.057-0.437,0.171c-0.12,0.114-0.179,0.252-0.179,0.415
+								c0,0.157,0.059,0.29,0.179,0.4s0.265,0.165,0.437,0.165c0.164,0,0.309-0.055,0.43-0.165s0.182-0.243,0.182-0.4
+								c0-0.162-0.061-0.301-0.182-0.415C47.523,29.629,47.379,29.572,47.215,29.572z"/>
+						</svg>
+						<p class="s-label-small">
+							Забронировать квартиру
+						</p>
+						<!--<p >
+						Оповестить о изменении статуса
+						</p> -->
+					</div>
+					<div class="col-xs-4 ap-button">
+					<div>
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="71.37px"
+							 height="71.37px" viewBox="0 0 71.37 71.37" enable-background="new 0 0 71.37 71.37" xml:space="preserve">
+								<path class="circle-but" opacity="0" fill="#D2D2D2" d="M35.685,0.5C16.284,0.5,0.5,16.284,0.5,35.685S16.284,70.87,35.685,70.87
+								S70.87,55.086,70.87,35.685S55.086,0.5,35.685,0.5z"/>
+								<path class="circle-but" fill="#D3D3D3" d="M35.685,71.37C16.008,71.37,0,55.362,0,35.685S16.008,0,35.685,0S71.37,16.008,71.37,35.685
+								S55.362,71.37,35.685,71.37z M35.685,1C16.56,1,1,16.56,1,35.685S16.56,70.37,35.685,70.37S70.37,54.811,70.37,35.685
+								S54.811,1,35.685,1z"/>
+								<path class="inner-but" fill="#4D4D4D" d="M43.152,35.825c-1.144,0-2.571,0.191-4.142,0.553c-1.646-1.261-3.317-2.796-4.751-4.367
+								c0.474-4.691-0.287-6.648-1.018-7.463c-0.575-0.641-1.376-0.864-2.263-0.62c-1.016,0.279-1.399,0.917-1.542,1.403
+								c-0.591,2.013,1.863,5.228,3.517,7.101c-0.253,2.156-0.734,4.466-1.365,6.567c-1.498,0.725-2.782,1.499-3.725,2.247
+								c-1.188,0.941-1.863,1.858-2.008,2.724c-0.119,0.712,0.117,1.38,0.682,1.93c0.436,0.425,0.918,0.64,1.431,0.64h0
+								c2.186,0,3.825-4.043,4.653-6.644c1.926-0.89,4.074-1.65,6.109-2.162c1.747,1.286,4.098,2.731,5.843,2.731
+								c1.151,0,1.917-0.622,2.155-1.75c0.192-0.909-0.095-1.503-0.369-1.842C45.794,36.178,44.716,35.825,43.152,35.825z M27.967,45.287
+								c-0.178,0-0.36-0.093-0.557-0.285c-0.349-0.34-0.355-0.62-0.32-0.827c0.157-0.943,1.629-2.23,3.938-3.483
+								C29.88,43.853,28.699,45.287,27.967,45.287z M30.637,25.683c0.054-0.184,0.179-0.413,0.671-0.548
+								c0.129-0.035,0.25-0.053,0.359-0.053c0.252,0,0.455,0.096,0.64,0.302c0.669,0.746,0.952,2.676,0.801,5.29
+								C31.625,28.836,30.328,26.737,30.637,25.683z M37.455,36.778c-1.454,0.412-2.938,0.935-4.342,1.53l0.012-0.038l-0.033,0.015
+								c0.406-1.51,0.734-3.091,0.961-4.627l0.024,0.027l0.004-0.035c1.062,1.095,2.216,2.155,3.379,3.1l-0.032,0.008L37.455,36.778z
+								M45.502,38.456c-0.115,0.544-0.376,0.756-0.93,0.756c-0.94,0-2.429-0.661-4.185-1.843c1.041-0.192,1.981-0.293,2.765-0.293
+								c1.531,0,2.056,0.366,2.233,0.584C45.441,37.731,45.611,37.94,45.502,38.456z"/>
+						</svg>
+
+					</div>
+						<p class="s-label-small">
+						Cохранить<br> в PDF
+						</p>
+					</div>   
+				</div>
+				
+				<div class="col-xs-2 ap-status zero-padding">
+					<p>Статус</p>
+<h2 class="s_free">Свободна</h2>
+<!-- 	 <h2 class="s_book">Забронированна</h2>  -->
+<!--  <h2 class="s_sold">Продана</h2> -->
+				</div>
+				
+				<div class="col-xs-2 ap_complex-logo zero-padding">
+					<p>Жилой комплекс</p>
+					<img src="images/crown_logo.png">
+				</div>
+
+				<div href="apartment.html" class="col-xs-12 ap-menu zero-padding">
+					<ul>
+					   <li>
+							<a href="apartment.html" >О квартире
+							</a>
+						</li>
+						<li>
+							<a href="plan.html" >Расположение
+							</a>
+						</li>
+						<li> 
+							<a href="gallery.html" >Визуализация
+							</a>
+						</li>
+						<li>
+							<a href="docs.html">Условия покупки
+							</a>
+						</li>
+						<li class="active">
+							<a href="stock.html">Ипотека
+							</a>
+						</li>
+						<li>
+							<a href="stock.html">Похожие варианты
+							</a>
+						</li>
+					</ul> 
+				</div>
+
+			</div>
+		</div>      
+                  
+                  
+		
+		<div class="container-fluid container-fix about-header about-header-bigger" style="background-image: url(../images/crown.jpg);">
+	   		<div class="about-header-layer"> 
+	   			<div class="col-xs-12 zero-padding complex-line">
+				</div>  
+	   			<div class="ap-header-layer-top">
+				</div>
+		   		<div class="container fin">
+		   		
+				<ul class="col-xs-12 zero-padding text-center ap-complex-fix" role="tablist">
+					<li role="presentation" class="active br">
+						<a href="#banki"  role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+						Банки
+						<svg class="triangle-active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px"
+						height="10px" viewBox="0 0 7.543 7.543" enable-background="new 0 0 7.543 7.543" xml:space="preserve">
+						<polygon fill="#EFEFEF" points="7.543,0 7.543,7.543 0,7.543"/>
+						</svg>
+						</a>	
+					</li>
+
+					<li role="presentation" class="br border-none">
+						<a href="#iprog" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">
+						Ипотечные программы
+						<svg class="triangle-active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px"
+						height="10px" viewBox="0 0 7.543 7.543" enable-background="new 0 0 7.543 7.543" xml:space="preserve">
+						<polygon fill="#EFEFEF" points="7.543,0 7.543,7.543 0,7.543"/>
+						</svg>
+						</a>
+					</li>
+				</ul> 
+		   		
+				<div id="accordion" class="accordion-block">        
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active in" aria-labelledby="home-tab" id="banki">
+
+							<div class="col-xs-12 bank-line zero-padding">
+								<div class="col-xs-3 zero-padding bank-line-image">
+									<img src="images/bank_logo.png">
+								</div>
+								<div class="col-xs-1 bank-button"  data-toggle="modal" data-target=".programs_info">
+									О банке
+								</div>
+								<div class="col-xs-2 col-xs-offset-2  bank-status-label">
+									Рейтинг:
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По активам</label>
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По вкладам</label>
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По кредитам</label>
+								</div>
+							</div>
+							<div class="panel program_block">
+								<a class="m_programs" data-toggle="collapse" data-parent=".tab-pane" href="#collapseOne">Ипотечная программа								<img class="bank-triangle" src="images/bt.svg">
+								</a>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<div class="panel-body bank-list-body">
+										<table class="bank-table">
+											<tr>
+												<th></th>
+												<th>% ставка</th>
+												<th>max сумма, руб</th>
+												<th>min взнос, %</th>
+												<th>срок</th>
+												<th></th>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info_number2" class="td"><img src="images/bank-q.svg">Тот самый пример</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button"  data-toggle="modal" data-target=".application_modal">отправить заявку</td>
+											</tr>
+											<tr>
+												<td class="td-title">Заголовок</td>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button" data-toggle="modal" data-target=".application_modal-ok">отправить заявку</td>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">отправить заявку</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-12 bank-line zero-padding">
+								<div class="col-xs-3 zero-padding bank-line-image">
+									<img src="images/bank_logo.png">
+								</div>
+								<div class="col-xs-1 bank-button"  data-toggle="modal" data-target=".programs_info">
+									О банке
+								</div>
+								<div class="col-xs-2 col-xs-offset-2  bank-status-label">
+									Рейтинг:
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По активам</label>
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По вкладам</label>
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По кредитам</label>
+								</div>
+							</div>
+							<div class="panel program_block">
+								<a class="m_programs" data-toggle="collapse" data-parent=".tab-pane" href="#collapseTwo">Ипотечная программа								<img class="bank-triangle" src="images/bt.svg">
+								</a>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="panel-body bank-list-body">
+										<table class="bank-table">
+											<tr>
+												<th></th>
+												<th>% ставка</th>
+												<th>max сумма, руб</th>
+												<th>min взнос, %</th>
+												<th>срок</th>
+												<th></th>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info" class="td-h"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">Отправить заявку</td>
+											</tr>
+											<tr>
+
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">Отправить заявку</td>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">Отправить заявку</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-12 bank-line zero-padding">
+								<div class="col-xs-3 zero-padding bank-line-image">
+									<img src="images/bank_logo.png">
+								</div>
+								<div class="col-xs-1 bank-button"  data-toggle="modal" data-target=".programs_info">
+									О банке
+								</div>
+								<div class="col-xs-2 col-xs-offset-2  bank-status-label">
+									Рейтинг:
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По активам</label>
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По вкладам</label>
+								</div>
+								<div class="col-xs-1  bank-rating">
+									<label>По кредитам</label>
+								</div>
+							</div>
+							<div class="panel program_block">
+								<a class="m_programs" data-toggle="collapse" data-parent=".tab-pane" href="#collapse4">Ипотечная программа								<img class="bank-triangle" src="images/bt.svg">
+								</a>
+								<div id="collapse4" class="panel-collapse collapse">
+									<div class="panel-body bank-list-body">
+										<table class="bank-table">
+											<tr>
+												<th>Банк/ название программы</th>
+												<th>% ставка</th>
+												<th>max сумма, руб</th>
+												<th>min взнос, %</th>
+												<th>срок</th>
+												<th></th>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info" class="td-h"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">отправить заявку</td>
+											</tr>
+											<tr>
+												<td class="td-title">Заголовок</td>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">отправить заявку</td>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info"><img src="images/bank-q.svg">С государственной поддержкой</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">отправить заявку</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						 
+						<div class="tab-pane fade" id="iprog" role="tabpanel" aria-labelledby="profile-tab">
+						
+							<div class="col-xs-12 bank-line zero-padding">
+								<div class="col-xs-12 program-name"  data-toggle="modal" data-target=".programs_info">
+								C государственной поддержкой<img src="images/bank-q.svg">
+								</div>
+							</div>
+							<div class="panel program_block">
+								<a class="m_programs" data-toggle="collapse" data-parent=".tab-pane" href="#collapseten">Список банков<img class="bank-triangle" src="images/bt.svg">
+								</a>
+								<div id="collapseten" class="panel-collapse collapse in">
+									<div class="panel-body bank-list-body">
+										<table class="bank-table">
+											<tr>
+												<th style="padding-right: 10px;">Банк / название программы</th>
+												<th>% ставка</th>
+												<th>max сумма, руб</th>
+												<th>min взнос, %</th>
+												<th>срок</th>
+												<th></th>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info" class="td mort-prog"><img src="images/bank-q.svg">Сбербанк<br><span>С госсударственной поддержкой</span></td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">отправить заявку</td>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info" class="mort-prog"> <img src="images/bank-q.svg">ВТБ<br><span>для молодых семей</span></td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">отправить заявку</td>
+											</tr>
+											<tr>
+												<td data-toggle="modal" data-target=".programs_info"><img src="images/bank-q.svg">МДМ</td>
+												<td>14% – 16%</td>
+												<td>3 000 000</td>
+												<td>20</td>
+												<td>до 30 лет</td>
+												<td class="td-button">отправить заявку</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+     
+	<div class="container-fluid filter-line">
+		<div class="container fin">
+			<div class="col-xs-12 zero-padding filter-container">
+				<div class="col-xs-4 zero-padding">
+					<h3>Квартиры в этом комплексе</h3>
+				</div>
+				<div class="col-xs-6 zero-padding filter-body">
+					<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+						Адресс
+						<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+							<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+						10.842,4.447 10.842,6.2 6.314,6.2 "/>
+						</svg>
+					</a>
+					<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+						Комнаты
+						<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+							<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+						10.842,4.447 10.842,6.2 6.314,6.2 "/>
+						</svg>
+					</a>
+					<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+						Секция
+						<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+							<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+						10.842,4.447 10.842,6.2 6.314,6.2 "/>
+						</svg>
+					</a>
+					<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+						Этаж
+						<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+							<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+						10.842,4.447 10.842,6.2 6.314,6.2 "/>
+						</svg>
+					</a>
+					<a data-toggle="modal" data-target=".modal_filters" class="col-xs-2 zero-padding filter-item">
+						Площадь
+						<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+							<polygon class="fplus" fill="#4D4D4D" points="6.314,10.647 4.528,10.647 4.528,6.2 0,6.2 0,4.447 4.528,4.447 4.528,0 6.314,0 6.314,4.447 
+						10.842,4.447 10.842,6.2 6.314,6.2 "/>
+						</svg>
+					</a>
+					<button type="button" class="col-xs-2 zero-padding filter-item filter-button">
+						<p>Очистить</p>
+						<svg class="fplussvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+								<polygon class="fplus" fill="#4D4D4D" points="1.32,8.849 0.058,7.586 3.202,4.442 0,1.24 1.24,0 4.442,3.202 7.586,0.058 8.849,1.32 
+									5.705,4.465 8.907,7.667 7.667,8.907 4.465,5.705 		"/>
+						</svg>
+
+					</button>
+				</div>
+				<div class="col-xs-2 zero-padding check-book">
+					<span>
+						<input type="checkbox" />   
+						<label>Не отображать забронированные</label>  
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<div class="container fin">
+	
+		</div>
+           
+           <div class="modal fade modal_filters" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="container container-modal-city zero-padding">
+                <div class="col-xs-12 header-container-modal header-block">
+                    <div class="modal-text">
+                        <p>Город</p>
+                    </div>
+                    <button type="button" class="close close-modal" data-dismiss="modal" aria-hidden="true">
+                        <img src="images/close.png">
+                    </button>
+                </div>
+                
+                <div class="col-xs-12 list-modal-city">
+                   
+                    <div class="col-xs-4 modal-list-item">
+                        <li>                 
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />   
+                                <label>Новосибирск</label>  
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />     
+									<label>Омск</label>
+								</span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" /> 
+                                <label>Томск</label>    
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+
+ 					<div class="col-xs-4 modal-list-item">
+                        <li>                 
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />   
+                                <label>Екатеринбург</label>  
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" />     
+									<label>Уфа</label>
+								</span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-xs-4 modal-list-item">
+                        <li>
+                            <div class="modal_checkbox">
+                                <span>
+                                    <input type="checkbox" /> 
+                                <label>Иркутск</label>    
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+     
+	<div class="modal fade programs_info" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="container container-modal-aplication zero-padding" id="modal_ajax">
+			<div class="col-xs-12 header-container-modal-stock header-block">
+				<div class="vertical">
+				<h2>KSP Bank</h2>
+				</div>
+				<button type="button" class="close close-modal" data-dismiss="modal" aria-hidden="true">
+					<img src="http://findome.ru/sites/all/themes/realty_theme/images/close.png" alt="" title="Закрыть">
+				</button>
+			</div>
+			<div class="col-xs-12 zero-padding bank-line">
+				<div class="col-xs-3 bank-line-image" id="bank-id-need">
+				<img src="images/b_logo.png" alt="" title="">  </div>
+			</div>
+			<div class="col-xs-12 list-modal-stock zero-padding">
+				<p>
+				Банк — российский коммерческий банк, международная финансовая группа, один из крупнейших банков России и Европы. Контролируется Центральным Банком Российской Федерации. Универсальный банк, предоставляющий широкий спектр банковских услуг.
+				</p>
+				<p>Доля банка на рынке частных вкладов на 1 июня 2009 годасоставляла 50,5 %, а его кредитный портфель соответствовал более 30 % всех выданных в стране займов. Бренд на начало 2010 года по оценке журнала «The Banker» и компании Brand Finance занимал 15 место в рейтинге самых дорогих банковских брендов и стоил приблизительно 11,7 миллиарда долларов.
+				</p>
+			</div>
+			<div class="col-xs-12 modal-credit-list-body">
+				<div class="modal-credit-separator">
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-4">
+						<label>Номер лицензии</label>
+					</div>
+					<div class="col-xs-6">
+						<a href="#">121231231231</a>
+					</div>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-4">
+						<label>ИНН</label>
+					</div>
+					<div class="col-xs-6">
+						<p>121231231231</p>
+					</div>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-4">
+						<label>БИК</label>
+					</div>
+					<div class="col-xs-6">
+						<p>121231231231</p>
+					</div>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-4">
+						<label>Головной офис</label>
+					</div>
+					<div class="col-xs-6">
+						<p>000000, РФ, Москва, ул. Тестовая, д.0</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade programs_info_number2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="container container-modal-aplication zero-padding" id="modal_ajax">
+			<div class="col-xs-12 header-container-modal-stock header-block">
+				<div class="vertical">
+				<h2>KSP Bank</h2>
+				</div>
+				<button type="button" class="close close-modal" data-dismiss="modal" aria-hidden="true">
+					<img src="http://findome.ru/sites/all/themes/realty_theme/images/close.png" alt="" title="Закрыть">
+				</button>
+			</div>
+			<div class="col-xs-12 zero-padding bank-line">
+				<div class="col-xs-3 bank-line-image" id="bank-id-need">
+				<img src="images/b_logo.png" alt="" title="">  </div>
+			</div>
+			<div class="col-xs-12 list-modal-stock zero-padding">
+				<p>
+				Банк — российский коммерческий банк, международная финансовая группа, один из крупнейших банков России и Европы. Контролируется Центральным Банком Российской Федерации. Универсальный банк, предоставляющий широкий спектр банковских услуг.
+				</p>
+				<p>Доля банка на рынке частных вкладов на 1 июня 2009 годасоставляла 50,5 %, а его кредитный портфель соответствовал более 30 % всех выданных в стране займов. Бренд на начало 2010 года по оценке журнала «The Banker» и компании Brand Finance занимал 15 место в рейтинге самых дорогих банковских брендов и стоил приблизительно 11,7 миллиарда долларов.
+				</p>
+			</div>
+			<div class="col-xs-12 modal-credit-list-body">
+				<div class="modal-credit-separator">
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-5">
+						<label>Ставки</label>
+					</div>
+					<div class="col-xs-6">
+						<a href="#">12%</a>
+					</div>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-5">
+						<label>Сумма кредита</label>
+					</div>
+					<div class="col-xs-6">
+						<p>от 10 до 100 лет</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 modal-credit-list-body">
+				<div class="modal-credit-separator">
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<h3>Заголовок</h3>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-5">
+						<label>Наличие постоянной или временной
+регистрации в регионе обращения</label>
+					</div>
+					<div class="col-xs-6">
+						<a href="#">12%</a>
+					</div>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-5">
+						<label>Сумма кредита</label>
+					</div>
+					<div class="col-xs-6">
+						<p>Досрочное погашение кредита без комиссий и штрафов возможно сразу с момента его получения.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-12 modal-credit-list-body">
+				<div class="modal-credit-separator">
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<h3>Дополнительно</h3>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-5">
+						<label>Штрафы:</label>
+					</div>
+					<div class="col-xs-6">
+						<p>Неустойка за несвоевременное погашение кредита составляет 20% годовых с суммы просроченного платежа за период просрочки с даты, следующей за датой наступления исполнения обязательства, установленной Договором, по дату погашения Просроченной задолженности по Договору </p>
+					</div>
+				</div>
+				<div class="col-xs-12 modal-credit-list">
+					<div class="col-xs-5">
+						<label>Страхование</label>
+					</div>
+					<div class="col-xs-6">
+						<p>Обязательное страхование страхование жизни и трудоспособности заемщика; страхование приобретаемой квартиры от рисков утраты и повреждения; страхование риска утраты права собственности на квартиру. При отсутствии комплексного страхования процентная ставка увеличивается..</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+     		<div class="modal fade application_modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div class="container container-modal-aplication zero-padding" id="modal_ajax"><form action="/mortgage_apartment?bankId=133&amp;cityId=1&amp;mortgageId=596" method="post" id="realty-mortgage-request-form" accept-charset="UTF-8"><div><div class="col-xs-12 header-container-modal-credit header-block">
+  <div class="vertical">
+    <h2>Заявка на получение ипотеки</h2>
+  </div>
+  <button type="button" class="close close-modal" data-dismiss="modal" aria-hidden="true">
+    <img src="http://findome.ru/sites/all/themes/realty_theme/images/close.png" alt="" title="Закрыть">  </button>
+</div>
+
+<div class="col-xs-12 zero-padding bank-line">
+  <div class="col-xs-3 bank-line-image" id="bank-id-need">
+    <img src="http://findome.ru/sites/default/files/banklogo-13.png" alt="" title="">  </div>
+</div>
+
+<div class="col-xs-12" id="hint-box"><div><p>Пожалуйста заполните поле Возраст</p><p>Пожалуйста заполните поле Сумма кредитования</p><p>Пожалуйста заполните поле Срок кредитования</p><p>Пожалуйста заполните поле Первоначальный взнос</p><p>Пожалуйста заполните поле Ежемесячный доход</p><p>Пожалуйста заполните поле Форма подтверждения</p><p>Пожалуйста заполните поле Стаж на последнем месте</p><p>Пожалуйста заполните поле Общий стаж</p><p>Пожалуйста выбирите удобный для Вас филиал банка</p><p>Пожалуйста согласитесь с условиями обработки персональных данных, поставив галку в соответствующем поле</p><p>Пожалуйста подтвердите доставерность введеных сведений, поставив галку в соответствующем поле</p><p>Пожалуйста заполните паспортные данные</p></div></div>
+
+<div class="col-xs-12" id="info-box">
+
+  <h4>Заёмщик</h4>
+  <div class="col-xs-12 body-modal-line" id="input-full_name">
+    <div class="form-item form-type-textfield form-item-full-name">
+  <label for="edit-full-name">ФИО </label>
+ <input type="text" id="edit-full-name" name="full_name" value="Vova sdfsadf sadfasdf" size="60" maxlength="128" class="form-text">
+</div>
+  </div>
+
+  <div class="col-xs-12 body-modal-line" id="input-age">
+    <div class="form-item form-type-textfield form-item-age">
+  <label for="edit-age">Возраст </label>
+ <input type="text" id="edit-age" name="age" value="" size="60" maxlength="128" class="form-text">
+</div>
+  </div>
+
+  <div class="col-xs-12 body-modal-line" id="input-mobile_phone">
+    <div class="form-item form-type-textfield form-item-mobile-phone">
+  <label for="edit-mobile-phone">Мобильный телефон </label>
+ <input type="text" id="edit-mobile-phone" name="mobile_phone" value="234234" size="60" maxlength="128" class="form-text">
+</div>
+  </div>
+
+  <div class="col-xs-12 body-modal-line">
+    <div class="form-item form-type-textfield form-item-home-phone">
+  <label for="edit-home-phone">Домашний телефон </label>
+ <input type="text" id="edit-home-phone" name="home_phone" value="" size="60" maxlength="128" class="form-text">
+</div>
+  </div>
+
+  <div class="col-xs-12 body-modal-line" id="input-email">
+    <div class="form-item form-type-textfield form-item-email">
+  <label for="edit-email">Электронная почта </label>
+ <input type="text" id="edit-email" name="email" value="realty@yopmail.com" size="60" maxlength="128" class="form-text">
+</div>
+  </div>
+
+  <div class="col-xs-12 bookmodal-title">
+    <p>Введите ваши паспортные данные</p>
+  </div>
+  <div class="col-xs-12 modal-search mb-25">
+    <div class="col-xs-2 col-xs-offset-2">
+      <div class="form-item form-type-textfield form-item-passport-id">
+ <input class="input-modal form-text" id="passport_id" placeholder="Номер" type="text" name="passport_id" value="" size="60" maxlength="128">
+</div>
+    </div>
+    <div class="col-xs-3">
+      <div class="form-item form-type-textfield form-item-passport-series">
+ <input class="input-modal form-text" id="passport_series" placeholder="Серия" type="text" name="passport_series" value="" size="60" maxlength="128">
+</div>
+    </div>
+    <div class="col-xs-3">
+      <div class="form-item form-type-textfield form-item-date-issue">
+ <input class="input-modal form-text" id="date_issue" placeholder="Дата выдачи" type="text" name="date_issue" value="" size="60" maxlength="128">
+</div>
+    </div>
+    <div class=" col-xs-offset-2 col-xs-8">
+      <div class="form-item form-type-textfield form-item-issued-by">
+ <input class="input-modal form-text" id="issued_by" placeholder="Кем выдан" type="text" name="issued_by" value="" size="60" maxlength="128">
+</div>
+    </div>
+  </div>
+
+  <h4>Кредитование</h4>
+  <div class="col-xs-12 body-modal-bigline">
+    <label>Cумма кредитования</label>
+    <div class="col-xs-6 fix-div incorrect-input">
+      <p>Заявка на выбранную квартиру</p>
+      <div class="form-item form-type-textfield form-item-apartment">
+ <input readonly="readonly" type="text" id="edit-apartment" name="apartment" value="" size="60" maxlength="128" class="form-text">
+</div>
+    </div>
+
+          <div class="col-xs-6 fix-div" id="input-amount">
+            <p>Требуемая сумма</p>
+        <div class="form-item form-type-textfield form-item-amount">
+ <input type="text" id="edit-amount" name="amount" value="" size="60" maxlength="128" class="form-text">
+</div>
+        <span>руб.</span>
+      </div>
+    </div>
+
+    <div class="col-xs-12 body-modal-line body-modal-miniline-fix" id="input-period">
+      <label>Срок кредитования</label><div class="form-item form-type-textfield form-item-period">
+ <input type="text" id="edit-period" name="period" value="" size="60" maxlength="128" class="form-text">
+</div>
+      <span>лет</span>
+    </div>
+
+    <div class="col-xs-12 body-modal-line body-modal-line-fix" id="input-payment">
+      <label>Первоначальный взнос</label><div class="form-item form-type-textfield form-item-payment">
+ <input type="text" id="edit-payment" name="payment" value="" size="60" maxlength="128" class="form-text">
+</div>
+      <span>руб.</span>
+    </div>
+
+    <div class="col-xs-12 body-modal-line body-modal-line-fix" id="input-income">
+      <label>Ежемесячный доход</label><div class="form-item form-type-textfield form-item-income">
+ <input type="text" id="edit-income" name="income" value="" size="60" maxlength="128" class="form-text">
+</div>
+      <span>руб.</span>
+    </div>
+
+    <div class="col-xs-12 body-modal-radio" id="input-confirm_conf">
+      <span>Форма подтверждения</span>
+      <div id="edit-confirmation" class="form-radios"><div class="form-item first-div form-type-radio form-item-confirmation">
+ <input type="radio" id="edit-confirmation-0" name="confirmation" value="0" class="form-radio">  <label class="option" for="edit-confirmation-0">2-НДФЛ </label>
+
+</div>
+<div class="form-item second-div form-type-radio form-item-confirmation">
+ <input type="radio" id="edit-confirmation-1" name="confirmation" value="1" class="form-radio">  <label class="option" for="edit-confirmation-1">Форма банка </label>
+
+</div>
+</div>
+    </div>
+
+    <div class="col-xs-12 body-modal-radio modal-radio-fix" id="input-last_experience">
+      <span>Стаж на последнем месте<br> работы</span>
+      <div id="edit-last-experience" class="form-radios"><div class="form-item first-div form-type-radio form-item-last-experience">
+ <input type="radio" id="edit-last-experience-0" name="last_experience" value="0" class="form-radio">  <label class="option" for="edit-last-experience-0">Менее 3 <br> месяцев </label>
+
+</div>
+<div class="form-item second-div form-type-radio form-item-last-experience">
+ <input type="radio" id="edit-last-experience-1" name="last_experience" value="1" class="form-radio">  <label class="option" for="edit-last-experience-1">Более 3 <br> месяцев </label>
+
+</div>
+</div>    </div>
+
+    <div class="col-xs-12 body-modal-radio modal-radio-fix span-fix" id="input-total_experience">
+      <span>Общий стаж работы</span>
+      <div id="edit-total-experience" class="form-radios"><div class="form-item first-div form-type-radio form-item-total-experience">
+ <input type="radio" id="edit-total-experience-0" name="total_experience" value="0" class="form-radio">  <label class="option" for="edit-total-experience-0">Менее 3 <br> лет </label>
+
+</div>
+<div class="form-item second-div form-type-radio form-item-total-experience">
+ <input type="radio" id="edit-total-experience-1" name="total_experience" value="1" class="form-radio">  <label class="option" for="edit-total-experience-1">Более 3 <br> лет </label>
+
+</div>
+</div>    </div>
+
+    <div class="col-xs-12 modal-radio-filial-fix">
+      <span>Выберите отделение банка:</span>
+      <div class="form-item form-type-select form-item-cities">
+ <select id="edit-cities" name="cities" class="form-select"><option value="3">Красноярск</option><option value="2">Москва</option><option value="1" selected="selected">Новосибирск</option></select>
+</div>
+
+      <div id="affiliate-box" class="col-xs-8 col-xs-offset-4 filials-block">
+        <div id="edit-affiliate" class="form-radios"><div class="form-item form-type-radio form-item-affiliate">
+ <input type="radio" id="edit-affiliate-133-1-0" name="affiliate" value="133-1-0" class="form-radio">  <label class="option" for="edit-affiliate-133-1-0">Тестовый 1<br>000000, Новосибирск, ул.Тестовая, д.00 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-affiliate">
+ <input type="radio" id="edit-affiliate-133-1-1" name="affiliate" value="133-1-1" class="form-radio">  <label class="option" for="edit-affiliate-133-1-1">Тестовый 2<br>000000, Новосибирск, ул.Тестовая, д.01 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-affiliate">
+ <input type="radio" id="edit-affiliate-133-1-2" name="affiliate" value="133-1-2" class="form-radio">  <label class="option" for="edit-affiliate-133-1-2">Тестовый 3<br>000000, Новосибирск, ул.Тестовая, д.02 </label>
+
+</div>
+</div>      </div>
+
+    </div>
+
+    <div class="col-xs-7 col-xs-offset-3 zero-padding modal-confitm" id="input-personal">
+      <label>
+        <div id="edit-personal" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-personal-yes">
+ <input type="checkbox" id="edit-personal-yes" name="personal[yes]" value="yes" class="form-checkbox">  <label class="option" for="edit-personal-yes">Я соглашаюсь с <a href="/terms_use" target="_blank">условиями обработки персональных данных.</a> </label>
+
+</div>
+</div>      </label>
+    </div>
+
+    <div class="col-xs-7 col-xs-offset-3 zero-padding modal-confitm mb35">
+      <label>
+        <div id="edit-correct" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-correct-yes">
+ <input type="checkbox" id="edit-correct-yes" name="correct[yes]" value="yes" class="form-checkbox">  <label class="option" for="edit-correct-yes">Настоящим подтверждаю, что все сведения, содержащиеся в заявке, являются достоверными </label>
+
+</div>
+</div>      </label>
+    </div>
+
+    <div class="col-xs-7 col-xs-offset-3 zero-padding modal-confitm mb35">
+      <label>
+              </label>
+    </div>
+    <div id="mortgage-form-bookings">
+      <div class="col-xs-12 bookmodal-title">
+        <p>Выберите менеджера отдела продаж</p>
+      </div>
+<div id="edit-managers" class="form-radios col-xs-8 col-xs-offset-2 book-managers-block mb-35">
+        <div id="edit-managers" class="form-radios"><div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-238" name="managers" value="238" class="form-radio">  <label class="option" for="edit-managers-238">Шибаев Дмитрий </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-239" name="managers" value="239" class="form-radio">  <label class="option" for="edit-managers-239">Федоров Илья </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-234" name="managers" value="234" class="form-radio">  <label class="option" for="edit-managers-234">Романцов Павел </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-242" name="managers" value="242" class="form-radio">  <label class="option" for="edit-managers-242">Насонов Владимир </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-509" name="managers" value="509" class="form-radio">  <label class="option" for="edit-managers-509">Тестовый </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-241" name="managers" value="241" class="form-radio">  <label class="option" for="edit-managers-241">Орёл Александр </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-240" name="managers" value="240" class="form-radio">  <label class="option" for="edit-managers-240">Лунева Ирина </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-236" name="managers" value="236" class="form-radio">  <label class="option" for="edit-managers-236">Демидов Андрей </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-237" name="managers" value="237" class="form-radio">  <label class="option" for="edit-managers-237">Попов Максим </label>
+
+</div>
+<div class="form-item form-type-radio form-item-managers">
+ <input type="radio" id="edit-managers-235" name="managers" value="235" class="form-radio">  <label class="option" for="edit-managers-235">Ужгин Анатолий </label>
+
+</div>
+</div>      </div>
+      <div id="edit-managers" class="form-radios col-xs-10 col-xs-offset-2 book-managers-block">
+              </div>
+    </div>
+
+    <div class="col-xs-12 modal-button">
+      <input class="ok-button use-ajax-submit form-submit ajax-processed" type="submit" id="edit-mortgage-request-submit" name="op" value="Отправить заявку">    </div>
+
+  </div>
+
+<input type="hidden" name="form_build_id" value="form-elnnQc-5gaseIPs8VLQWQ6O6FnM3BccKxwACMvEQJgg">
+<input type="hidden" name="form_token" value="XRhn5bY7TsxE8vFiRJ7XmuTRN2bpvp9SiOf9e8_NXyA">
+<input type="hidden" name="form_id" value="realty_mortgage_request_form">
+</div></form></div>
+				</div>
+				
+				
+				<div class="modal fade application_modal-ok" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				  <div class="container container-modal-aplication zero-padding">
+					<div class="col-xs-12 header-container-modal-credit header-block">
+						<div class="vertical">
+							<h2>Заявка на получение ипотеки</h2>
+						</div>
+						<button type="button" class="close close-modal" data-dismiss="modal" aria-hidden="true">
+							<img src="images/close.png">
+						</button>
+					</div>
+					<div class="col-xs-12 zero-padding bank-line">
+						<div class="col-xs-3 bank-line-image">
+							<img src="images/bank_logo.png">
+						</div>
+					</div>
+					<div class="col-xs-12 body-modal-aplication">
+						<div class="col-xs-12 text-center">
+							<p>Заявка принята, спасибо что воспользовались нашим сервисом!</p>
+						
+						</div>
+							<div class="col-xs-12 credit-modal-button">
+								<input class="col-xs-4 col-xs-offset-4 comment-button margin-bottom-50 use-ajax-submit form-submit ajax-processed" type="submit" id="edit-button-submit" name="op" value="Закрыть">
+							</div>
+						</div>
+						<input type="hidden" name="form_build_id" value="form-3pUuzgq6ncHuIRrJrN33UykTiYqCVh8OJyLaat9ulkA">
+						<input type="hidden" name="form_token" value="4xTl8gg79wLcNuz7ElLbAx74Vt6RePS6Men9uq0-1_8">
+						<input type="hidden" name="form_id" value="realty_mortgage_request_form">
+					</div>
+				</div>
+	
+
+			
+
+      
+                                                                                                   
+	<div class="container-fluid container-fix" id="footer">      
+		<div class="container fin">
+			<div class="col-xs-12 footer-topline">
+				<a href="index.html" class="col-xs-3 footer-logo">
+					<img src="images/minilogo.svg">
+				</a>
+				<div class="col-xs-9 footer-text">
+					<div class="vertical">
+					<h2>
+						Findome не продает квартиры.
+					</h2>
+					<p>
+						Материалы предоставлены исключительно в информационных целях. В базе новостроек findome.ru публикуются материалы, полученные из открытых источников. Все права на изображения и тексты принадлежат их правообладателям. 
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 footer-bottomline">
+				<div class="col-xs-2">
+					<ul>
+						<li>
+							<a href="">FAQ</a>
+						</li>
+						<li>
+							<a href="">О проекте</a>
+						</li>
+						<li>
+							<a href="">Путеводитель
+							</a>
+						</li>
+						<li>
+							<a href="">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-4">
+					<ul>
+						<li>
+							<a href="">Политика использования файлов cookie</a>
+						</li>
+						<li>
+							<a href="">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a href="">Политика конфиденциальности
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-2">
+					<ul>
+						<li>
+							<a href="">Застройщикам</a>
+						</li>
+						<li>
+							<a href="">Партнерам</a>
+						</li>
+						<li>
+							<a href="">Банкам
+							</a>
+						</li>
+						<li>
+							<a href="">Агентам
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-4 footer-list-social">
+					<ul>
+						<li>
+							<a href="">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="31.646px" height="31.646px" viewBox="0 0 31.646 31.646" enable-background="new 0 0 31.646 31.646" xml:space="preserve">
+<path class="social-hover" fill="#FFFFFF" d="M29.898,0H1.747C0.783,0,0,0.781,0,1.747v28.151c0,0.966,0.783,1.748,1.747,1.748h15.156V19.391h-4.124
+v-4.777h4.124v-3.522c0-4.087,2.495-6.313,6.142-6.313c1.748,0,3.247,0.131,3.684,0.188v4.272l-2.529,0.001
+c-1.983,0-2.365,0.943-2.365,2.325v3.049h4.73l-0.619,4.776h-4.112v12.256h8.064c0.965,0,1.748-0.783,1.748-1.746V1.746
+C31.645,0.781,30.863,0,29.898,0z"/>
+</svg>
+
+							</a>
+						</li>
+						<li>
+							<a href="">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="31.641px" height="31.641px" viewBox="0 0 31.641 31.641" enable-background="new 0 0 31.641 31.641" xml:space="preserve">
+	<path class="social-hover" fill="#FFFFFF" d="M4.061,0H27.58c2.234,0,4.061,1.654,4.061,4.061V27.58c0,2.407-1.827,4.061-4.061,4.061H4.061
+	C1.827,31.641,0,29.988,0,27.58V4.061C0,1.654,1.827,0,4.061,0L4.061,0z M23.049,3.515c-0.784,0-1.424,0.641-1.424,1.425v3.41
+	c0,0.784,0.64,1.425,1.424,1.425h3.576c0.784,0,1.425-0.641,1.425-1.425V4.94c0-0.784-0.641-1.425-1.425-1.425H23.049
+	L23.049,3.515z M28.065,13.381H25.28c0.263,0.86,0.406,1.772,0.406,2.714c0,5.263-4.404,9.529-9.836,9.529
+	c-5.431,0-9.835-4.266-9.835-9.529c0-0.943,0.142-1.854,0.406-2.714H3.516v13.366c0,0.692,0.566,1.258,1.258,1.258h22.034
+	c0.692,0,1.258-0.566,1.258-1.258L28.065,13.381L28.065,13.381z M15.85,9.595c-3.509,0-6.355,2.757-6.355,6.157
+	s2.845,6.157,6.355,6.157c3.51,0,6.355-2.757,6.355-6.157S19.36,9.595,15.85,9.595z"/>
+</svg>
+
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="32.781px" height="31.641px" viewBox="0 0 32.781 31.641" enable-background="new 0 0 32.781 31.641" xml:space="preserve">
+								<path class="social-hover" fill="#FFFFFF" d="M28.894,13.587c0.451-0.583,0.81-1.051,1.074-1.405c1.906-2.533,2.731-4.152,2.478-4.857L32.347,7.16
+								c-0.066-0.099-0.237-0.19-0.512-0.273c-0.275-0.082-0.628-0.096-1.057-0.041L26.019,6.88c-0.11-0.011-0.22-0.008-0.331,0.008
+								c-0.11,0.017-0.182,0.034-0.215,0.05c-0.033,0.017-0.061,0.03-0.082,0.041l-0.066,0.05c-0.055,0.033-0.116,0.091-0.182,0.174
+								c-0.066,0.083-0.122,0.179-0.165,0.289c-0.518,1.333-1.107,2.572-1.768,3.718c-0.408,0.683-0.782,1.275-1.123,1.776
+								c-0.342,0.502-0.628,0.871-0.859,1.107c-0.231,0.237-0.441,0.427-0.628,0.57c-0.188,0.144-0.331,0.204-0.429,0.182
+								c-0.099-0.022-0.193-0.044-0.281-0.066c-0.154-0.099-0.278-0.234-0.372-0.405c-0.094-0.17-0.157-0.385-0.19-0.644
+								c-0.033-0.259-0.053-0.482-0.058-0.669c-0.006-0.187-0.003-0.451,0.008-0.793c0.011-0.342,0.016-0.572,0.016-0.694
+								c0-0.418,0.008-0.873,0.025-1.363c0.016-0.49,0.03-0.879,0.041-1.165c0.011-0.286,0.016-0.589,0.016-0.909
+								c0-0.319-0.019-0.57-0.058-0.752c-0.039-0.181-0.097-0.358-0.173-0.529c-0.077-0.17-0.19-0.303-0.339-0.396
+								c-0.149-0.094-0.333-0.168-0.553-0.223c-0.584-0.132-1.328-0.203-2.231-0.215c-2.049-0.021-3.365,0.111-3.949,0.397
+								c-0.231,0.121-0.441,0.286-0.628,0.496c-0.198,0.243-0.226,0.375-0.082,0.396c0.661,0.099,1.129,0.336,1.404,0.711l0.099,0.198
+								c0.077,0.144,0.154,0.397,0.231,0.76c0.077,0.363,0.127,0.765,0.149,1.206c0.055,0.804,0.055,1.492,0,2.065
+								c-0.055,0.573-0.107,1.019-0.157,1.338c-0.05,0.32-0.124,0.578-0.223,0.776c-0.099,0.199-0.165,0.32-0.198,0.364
+								c-0.033,0.044-0.061,0.071-0.082,0.083c-0.143,0.055-0.292,0.082-0.446,0.082c-0.154,0-0.342-0.077-0.562-0.232
+								c-0.22-0.154-0.449-0.366-0.686-0.636c-0.237-0.27-0.504-0.647-0.802-1.132c-0.297-0.484-0.606-1.057-0.925-1.718l-0.264-0.479
+								c-0.165-0.308-0.391-0.757-0.678-1.346c-0.286-0.589-0.54-1.159-0.76-1.71C7.376,7.408,7.244,7.232,7.068,7.11l-0.082-0.05
+								C6.931,7.017,6.842,6.97,6.721,6.92C6.6,6.871,6.473,6.835,6.341,6.813L1.814,6.846c-0.463,0-0.776,0.105-0.942,0.314
+								L0.806,7.259c-0.033,0.055-0.05,0.144-0.05,0.265c0,0.121,0.033,0.27,0.099,0.446c0.661,1.553,1.38,3.051,2.156,4.494
+								c0.777,1.443,1.451,2.606,2.024,3.487c0.573,0.882,1.156,1.713,1.752,2.495s0.989,1.283,1.181,1.503
+								c0.193,0.221,0.344,0.386,0.454,0.496l0.413,0.397c0.264,0.264,0.653,0.581,1.165,0.95c0.512,0.369,1.079,0.733,1.702,1.09
+								c0.622,0.358,1.347,0.65,2.173,0.876c0.826,0.226,1.63,0.317,2.412,0.272h1.9c0.386-0.033,0.677-0.154,0.876-0.363l0.066-0.082
+								c0.044-0.066,0.085-0.168,0.124-0.305c0.038-0.138,0.058-0.289,0.058-0.454c-0.011-0.474,0.025-0.901,0.107-1.281
+								c0.082-0.38,0.176-0.666,0.281-0.86c0.105-0.192,0.223-0.355,0.355-0.487c0.132-0.132,0.226-0.212,0.281-0.239
+								c0.055-0.027,0.099-0.046,0.132-0.058c0.264-0.088,0.575-0.003,0.934,0.256c0.358,0.259,0.694,0.578,1.008,0.958
+								c0.314,0.38,0.691,0.807,1.132,1.281c0.44,0.474,0.826,0.826,1.156,1.057l0.331,0.199c0.22,0.132,0.506,0.253,0.859,0.363
+								c0.352,0.11,0.661,0.138,0.925,0.082l4.23-0.066c0.418,0,0.744-0.069,0.975-0.206c0.231-0.137,0.369-0.289,0.413-0.454
+								c0.044-0.165,0.047-0.352,0.008-0.561c-0.039-0.209-0.077-0.355-0.116-0.437c-0.039-0.082-0.075-0.152-0.108-0.206
+								c-0.551-0.991-1.603-2.209-3.156-3.652l-0.033-0.033l-0.016-0.017l-0.016-0.016h-0.017c-0.705-0.672-1.151-1.124-1.338-1.355
+								c-0.341-0.44-0.419-0.886-0.231-1.338C27.539,15.411,28.034,14.689,28.894,13.587z"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="31.641px" height="31.641px" viewBox="0 0 31.641 31.641" enable-background="new 0 0 31.641 31.641" xml:space="preserve">
+								<path class="social-hover" fill="#FFFFFF" d="M26.757,10.213c0.013,0.242,0.018,0.485,0.018,0.73c0,7.457-5.676,16.055-16.055,16.055
+								c-3.186,0-6.152-0.934-8.651-2.535c0.439,0.049,0.891,0.08,1.346,0.08c2.644,0,5.077-0.903,7.009-2.418
+								c-2.472-0.044-4.554-1.677-5.273-3.918c0.345,0.066,0.699,0.102,1.059,0.102c0.516,0,1.015-0.07,1.487-0.199
+								c-2.582-0.521-4.528-2.799-4.528-5.535c0-0.024,0-0.047,0-0.07c0.761,0.421,1.632,0.675,2.557,0.704
+								c-1.514-1.012-2.509-2.741-2.509-4.697c0-1.034,0.278-2.002,0.764-2.835c2.781,3.414,6.94,5.659,11.63,5.894
+								c-0.097-0.411-0.145-0.844-0.145-1.287c0-3.113,2.526-5.64,5.641-5.64c1.624,0,3.091,0.685,4.12,1.78
+								c1.284-0.252,2.493-0.721,3.583-1.368c-0.422,1.317-1.317,2.423-2.481,3.121c1.14-0.135,2.226-0.438,3.24-0.889
+								C28.816,8.424,27.861,9.418,26.757,10.213z"/>
+								</svg>
+
+							</a>
+						</li>	
+						<li>
+							<a href="#">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="31.641px" height="31.641px" viewBox="0 0 31.641 31.641" enable-background="new 0 0 31.641 31.641" xml:space="preserve">
+								<path class="social-hover" fill="#FFFFFF" d="M19.825,3.93h-5.672c-2.527,0-4.277,0.554-5.852,1.855C7.063,6.853,6.324,8.406,6.324,9.938
+								c0,2.361,1.8,4.871,5.137,4.871c0.321,0,0.676-0.033,0.989-0.062l-0.046,0.112c-0.134,0.321-0.261,0.624-0.261,1.097
+								c0,0.921,0.444,1.489,0.874,2.038l0.054,0.07l-0.096,0.007c-1.378,0.094-3.942,0.27-5.815,1.421
+								c-2.212,1.315-2.384,3.229-2.384,3.783c0,2.208,2.057,4.436,6.654,4.436c5.345,0,8.141-2.949,8.141-5.861
+								c0-2.154-1.263-3.218-2.604-4.347l-1.131-0.88c-0.35-0.29-0.785-0.65-0.785-1.317c0-0.656,0.435-1.09,0.819-1.472l0.04-0.041
+								c1.221-0.962,2.606-2.053,2.606-4.412c0-2.372-1.482-3.598-2.195-4.187h1.882c0.023,0,0.046-0.006,0.065-0.019l1.621-1.019
+								c0.046-0.029,0.068-0.085,0.053-0.138C19.928,3.966,19.879,3.93,19.825,3.93z M12.947,26.412c-3.258,0-5.447-1.522-5.447-3.786
+								c0-1.479,0.895-2.553,2.659-3.192c1.412-0.475,3.235-0.499,3.253-0.499c0.309,0,0.464,0,0.711,0.031
+								c2.28,1.622,3.376,2.474,3.376,4.096C17.497,25.129,15.753,26.412,12.947,26.412z M12.916,13.94
+								c-2.734,0-3.869-3.594-3.869-5.519c0-0.979,0.223-1.73,0.68-2.297c0.497-0.622,1.348-1.023,2.168-1.023
+								c2.51,0,3.899,3.374,3.899,5.706c0,0.368,0,1.487-0.773,2.265C14.5,13.591,13.655,13.94,12.916,13.94z"/>
+								<path class="social-hover" fill="#FFFFFF" d="M27.774,15.037h-2.989v-2.978c0-0.068-0.055-0.123-0.123-0.123h-1.286c-0.068,0-0.123,0.055-0.123,0.123
+								v2.978H20.28c-0.068,0-0.123,0.055-0.123,0.123v1.303c0,0.068,0.055,0.123,0.123,0.123h2.974v2.997
+								c0,0.068,0.055,0.123,0.123,0.123h1.286c0.068,0,0.123-0.055,0.123-0.123v-2.998h2.989c0.068,0,0.123-0.055,0.123-0.123V15.16
+								C27.897,15.092,27.842,15.037,27.774,15.037z"/>
+								</svg>
+
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+		</div>
+    </body>
+</html>
