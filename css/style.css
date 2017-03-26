@@ -212,6 +212,7 @@ p {
   background: #eeeeee;
   height: 50px;
   width: 100%;
+  top: 0px;
   border-bottom: 1px solid #d3d3d3;
 }
 @media (max-width: 960px) {
@@ -11771,7 +11772,13 @@ div.vote-success {
   display: block;
   color: #fefefe;
   font-size: 20px;
+  line-height: 24px;
   margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-cap {
+  z-index: 10;
 }
 #fountainG {
   position: relative;
@@ -11929,4 +11936,10 @@ div.vote-success {
     -moz-transform: scale(0.3);
     background-color: #434343;
   }
+}
+.lazy-pane-text {
+  color: #fff;
+}
+.lazy-pane-placeholder {
+  margin-bottom: 100px;
 }

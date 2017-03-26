@@ -290,12 +290,13 @@ background:-moz-linear-gradient(top,rgba(71,71,71,.66) 0,rgba(71,71,71,.17) 75%,
 
 
 .menu-parent {
-    position: absolute;
-    z-index: 1046;
-	background: @beigh;
-	height: 50px;
-	width: 100%;
-	border-bottom: 1px solid @gray_morelight;
+  position: absolute;
+  z-index: 1046;
+  background: @beigh;
+  height: 50px;
+  width: 100%;
+  top:0px;
+  border-bottom: 1px solid @gray_morelight;
 
 	@media@960{
 		width: 960px;
@@ -12644,8 +12645,15 @@ display: none;
     display: block;
     color:#fefefe;
     font-size: 20px;
+    line-height: 24px;
     margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px
   }
+}
+
+.container-cap{
+  z-index: 10;
 }
 
 #fountainG{
@@ -12825,4 +12833,12 @@ display: none;
 	-moz-transform:scale(.3);
 		background-color:rgb(67,67,67);
 	}
+}
+
+.lazy-pane-text{
+  color:#fff;
+}
+
+.lazy-pane-placeholder{
+  margin-bottom: 100px;
 }
